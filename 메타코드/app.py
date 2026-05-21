@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
-file_path = "C:\Users\kmuk2\OneDrive\바탕 화면\메타코드\data\sunspots.csv"
+
 @st.cache_data
 def load_data(file_path):
     df = pd.read_csv(file_path)
@@ -92,7 +92,7 @@ st.markdown("""
 
 try:
     # 데이터 로드
-    df = load_data('data/sunspots.csv')
+    df = load_data(r"C:\Users\kmuk2\OneDrive\바탕 화면\메타코드\data\sunspots.csv")
 
     # 필터링된 데이터 - 전체 데이터 사용
     filtered_df = df
