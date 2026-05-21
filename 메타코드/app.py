@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
-
+file_path = "C:\Users\kmuk2\OneDrive\바탕 화면\메타코드\data\sunspots.csv"
 @st.cache_data
 def load_data(file_path):
     df = pd.read_csv(file_path)
